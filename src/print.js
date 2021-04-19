@@ -11,10 +11,10 @@ module.exports = (astPath, opts, print) => {
     }
   );
 
-  const error = child.stderr.toString();
-  if (error) {
-    throw new Error(error);
-  }
+  // const error = child.stderr.toString();
+  // if (error) {
+  //   throw new Error(error);
+  // }
 
   const response = child.stdout.toString();
   return response;

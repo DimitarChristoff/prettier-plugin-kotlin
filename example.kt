@@ -20,17 +20,17 @@ import com.google.gson.reflect.TypeToken.*
 class Empty {}
 
 class InitOrderDemoa constructor(name: String) {
-    val firstProperty = "First property: $name".also(::println)
+                val firstProperty = "First property: $name".also(::println)
 
-    init {
-        println("First initializer block that prints ${name}")
-    }
+                init {
+                    println("First initializer block that prints ${name}")
+                }
 
-    val secondProperty = "Second property: ${name.length}".also(::println)
+                val secondProperty = "Second property: ${name.length}".also(::println)
 
-    init {
-        println("Second initializer block that prints ${name.length}")
-    }
+                init {
+                    println("Second initializer block that prints ${name.length}")
+                }
 }
 
 class ColorHelpFormatter : CliktHelpFormatter() {
